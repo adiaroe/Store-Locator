@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STORE LOCATOR</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="js/store-data.js"></script>
+    </head>
+    <body>
+        <div class="title">Store Locator</div>
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Enter ZIP">
+                <i class="fas fa-search" onclick="searchStore()"></i>
+            </div>
+        </div>
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="store-container">
+                    <div class="store-info">
+                        <div class="store-address">
+                            <span>247 Mathilda Dr</span>
+                            <span>Goleta, CA-93117</span>
+                        </div>
+                        <div class="store-phone-number">321-323-1234</div>
+                    </div>
+                    <div class="store-number-container">
+                        <div class="store-number">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <script src="js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    </body>
+</html>
